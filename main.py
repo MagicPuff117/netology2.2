@@ -43,15 +43,23 @@ class Birds(Animal):
 
 
 
-goose1 = Birds('Серый', 40, 'male', 'гусь')
-goose2 = Birds('Белый', 37, 'male', 'гусь')
+bird1 = Birds('Серый', 40, 'male', 'гусь')
+bird2 = Birds('Белый', 37, 'male', 'гусь')
+bird3 = Birds('Ко-ко', 6, 'female', 'курица')
+bird4 = Birds('Кукареку', 7, 'female', 'курица')
 
-goose1.take_eggs()
-goose1.voice_recognize()
-goose1.feed()
-goose2.take_eggs()
-goose2.voice_recognize()
-goose2.feed()
+bird1.take_eggs()
+bird1.voice_recognize()
+bird1.feed()
+bird2.take_eggs()
+bird2.voice_recognize()
+bird2.feed()
+bird3.take_eggs()
+bird3.voice_recognize()
+bird3.feed()
+bird4.take_eggs()
+bird4.voice_recognize()
+bird4.feed()
 
 
 class milk_giving(Animal):
@@ -96,7 +104,7 @@ sheep2.voice_recognize()
 sheep2.get_wool()
 
 def get_sum_weight():
-    x = [goose2, goose1, mamle3, mamle2, mamle1, sheep2, sheep1]
+    x = [bird1, bird2,bird3, bird4 , mamle3, mamle2, mamle1, sheep2, sheep1]
     print(f'Суммарный вес всех животных :{sum(sum_weight.weight for sum_weight in x)} кг')
     print(max(max_weight.weight for max_weight in x))
     # for max_weight in x:
