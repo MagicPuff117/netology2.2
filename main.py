@@ -103,13 +103,18 @@ sheep2.feed()
 sheep2.voice_recognize()
 sheep2.get_wool()
 
-def get_sum_weight():
-    x = [bird1, bird2,bird3, bird4 , mamle3, mamle2, mamle1, sheep2, sheep1]
-    print(f'Суммарный вес всех животных :{sum(sum_weight.weight for sum_weight in x)} кг')
-    print(max(max_weight.weight for max_weight in x))
-    # for max_weight in x:
-    #     if max(max_weight.weight for max_weight in x) in x:
-    #         print([key])
-    #
 
-get_sum_weight()
+
+animals = [bird1, bird2,bird3, bird4 , mamle3, mamle2, mamle1, sheep2, sheep1]
+print(f'Суммарный вес всех животных :{sum(sum_weight.weight for sum_weight in animals)} кг')
+
+for animal in animals:
+    if animal.weight == max(max_weight.weight for max_weight in animals):
+        print(f'Самое тяжелое животное {animal.name}')
+
+
+
+
+
+
+
